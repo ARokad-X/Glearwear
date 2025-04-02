@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 5px 20px 20px 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.links{
+    padding: 8px 10px;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+.links > a{
+    padding: 0px 5px;
+    color: #000042;
+    text-decoration: none;
+}
+
+#img > img{
+    max-height: 57px;
+    max-width: 186px;
+    margin: 3px 0px 0px;
+}
+
+#mo > img{
+    max-height: 30px;
+    max-width: 110px;
+    margin: 3px 0px 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.h{
+    min-width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    padding: 0.4% 0.5%;
+    min-width: 35%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#links{
+    min-width: 30%;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#links > a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.header-main{
+    margin-top: 1%;
+    max-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main a{
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000042;
+    font-weight: 500;
+}
+
+.header-main img{
+    max-height: 35px;
+    border-radius: 5px;
+    margin: 0px 3px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.aside,
+.main {
+    height: 160vh;
+    border: 0.1px solid rgba(0, 0, 0, 0.515);
+    border-radius: 10px;
+}
+
+.aside {
+    padding: 10px 25px 30px 10px;
+}
+
+.main {
+    grid-column: 2/ span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px 10px 10px 30px;
+}
+
+.content {
+
+    position: relative;
+    display: inline-block;
+    border: 0.1px solid rgba(0, 0, 0, 0.515);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.inner-2 {
+    display: flex;
+    width: 100%;
+}
+
+.inner-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aside1 {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.aside1 p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.aside1 input[type="checkbox"] {
+    margin: 0;
+}
+
+.aside1 label {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.inner-1-1, .inner-2-1, .inner-3-1, .inner-4-1, .inner-5-1 {
+    margin-bottom: 15px;
+}
+
+.frames,
+.shapes {
+    height: 50px;
+    width: 70px;
+    border: 0.1px solid rgba(0, 0, 0, 0.111);
+    margin: 3px;
+    color: rgba(0, 0, 0, 0.297);
+    font-size: 10px;
+    text-align: center;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.297);
+}
+
+label:hover {
+    color: rgba(0, 0, 0, 0.686);
+}
+
+.frames:hover,
+.shapes:hover {
+    border: 0.1px solid rgba(0, 0, 0, 0.686);
+    color: rgba(0, 0, 0, 0.686);
+}
+
+.content:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.575);
+}
+
+.content img {
+    width: 367px;
+    height: 225px;
+    border-radius: 0.1px;
+}
+
+.description {
+    margin: 10px 20px;
+}
+
+.like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.like:hover {
+    color: red;
+}
+
+/* Footer Start */
+.footer {
+    background:  rgb(0,0,66);
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-container .eyewear-text p{
+    box-sizing: border-box;
+    display: block;
+    font-size: 15px;
+    text-align: justify;
+}
+.footer-container.eyewear-text p a{
+    color: #00c3ff;
+}
+.footer-section {
+    flex: 1;
+    margin: 15px;
+    min-width: 200px;
+    text-align: center;
+}
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #d4e9e2;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+.footer-section ul li {
+    margin: 1px 0;
+    transition: 0.3s ease-in-out;
+}
+.footer-section ul li :hover{
+    color:#00c3ff;
+    transform: scale(1.01);
+}
+.footer-section ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footer-section p{
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}
+.footer-section p:hover{
+    color:#00c3ff;
+    transform: scale(1.01);
+}
+.footer .footer-container .social i {
+    width: 35px; 
+    height: 35px;
+    margin: 10px 0;
+    font-size: 30px;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+    border-radius: 50%;
+}
+.footer .footer-container .social i:hover {
+    transform: scale(1.1);
+    color:#00c3ff;
+}
+.footer .footer-container .payment i {
+    width: 35px; 
+    height: 35px;
+    margin: 10px 0;
+    font-size: 20px;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+    border-radius: 50%;
+}
+.footer .footer-container .payment i:hover {
+    transform: scale(1.1);
+    color:#00c3ff;
+}
+.footer-bottom {
+    background:  rgb(0,0,66);
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.footer-bottom p{
+    font-size: 20px;
+}
+
+/* Scroll to top start */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+#scroll-to-top:hover {
+    background: transparent  #0056b3;
+    transform: scale(1.1);
+}
+/* Scroll to top end */
+
+
+/* Footer End */
